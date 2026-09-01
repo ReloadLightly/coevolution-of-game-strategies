@@ -1,0 +1,22 @@
+[project]
+name = "coevolution-of-game-strategies"
+version = "0.1.0"
+description = "Koza 1992 reconstruction: genetic programming + co-evolution of strategies for a 32-outcome extensive-form game."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ReloadLightly" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+coevo = "coevo.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
